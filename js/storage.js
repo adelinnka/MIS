@@ -15,6 +15,7 @@ LocalStorageManager.prototype.localStorageSupported = function () {
     return false;
   }
 };
+
 //Състояние на играта: getter,setter + изчистване;
 LocalStorageManager.prototype.getGameState = function () {
   var stateJSON = this.storage.getItem(this.gameStateKey);
